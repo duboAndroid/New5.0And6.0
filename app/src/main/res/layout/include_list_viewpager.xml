@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--CoordinatorLayout协调布局 有这样几个功能:(1)让浮动操作按钮上下滑动，为Snackbar留出空间 (2)拓展或者缩小toolbar
+                                           (3)控制哪个view应该扩展还是收缩，以及其显示大小比例
+ -->
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--AppBarLayout 是继承LinerLayout实现的一个ViewGroup容器组件，它是为了Material Design设计的AppBar，支持手势滑动操作-->
+        <!--app:layout_behavior="com.support.android.designlibdemo.MyAppBarLayoutBehavior"-->
+        <!--android:minHeight="30dp"-->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <!--ToolBar 相当于之前ActionBar-->
+        <!--这里注意，要用paddingTop 而不能用android:fitsSystemWindows="true" 否则会将上面的蓝色条顶出去-->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:paddingTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:minHeight="30dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+            <!--android:minHeight="30dp"-->
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+         />
+        <!--注意：给viewpager配置layout_behavior不是说把事件传递给AppBarLayout，
+        而是在布局上给AppBarLayout留出空间 只能是AppBarLayout的behavior
+        通常情况下layout_behavior只需要给需要获取滚动事件的子view配置即可，
+        比如这里的AppBarLayout和FAB （他们都有默认的behavior）-->
+
+
+    <!--和CoordinatorLayout协调使用-->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity = "bottom|right"
+        android:layout_margin="@dimen/fab_margin"
+        app:layout_behavior="com.support.android.designlibdemo.MyFABBehavior"
+        android:src="@drawable/ic_done" />
+        <!--app:layout_anchor="@id/appbar"
+        app:layout_anchorGravity="bottom|end"-->
+
+    <android.support.v7.widget.CardView
+        app:layout_behavior="com.support.android.designlibdemo.MyCardViewBehavior"
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="@color/bg"
+        android:layout_gravity="bottom"
+        android:layout_height="20dp"/>
+
+</android.support.design.widget.CoordinatorLayout>

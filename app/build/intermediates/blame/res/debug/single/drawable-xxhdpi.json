@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "C:\\Users\\dubo\\Desktop\\New5.0And6.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_menu.png",
+        "source": "C:\\Users\\dubo\\Desktop\\New5.0And6.0\\app\\src\\main\\res\\drawable-xxhdpi\\ic_menu.png"
+    },
+    {
+        "merged": "C:\\Users\\dubo\\Desktop\\New5.0And6.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_event.png",
+        "source": "C:\\Users\\dubo\\Desktop\\New5.0And6.0\\app\\src\\main\\res\\drawable-xxhdpi\\ic_event.png"
+    },
+    {
+        "merged": "C:\\Users\\dubo\\Desktop\\New5.0And6.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_discuss.png",
+        "source": "C:\\Users\\dubo\\Desktop\\New5.0And6.0\\app\\src\\main\\res\\drawable-xxhdpi\\ic_discuss.png"
+    },
+    {
+        "merged": "C:\\Users\\dubo\\Desktop\\New5.0And6.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_done.png",
+        "source": "C:\\Users\\dubo\\Desktop\\New5.0And6.0\\app\\src\\main\\res\\drawable-xxhdpi\\ic_done.png"
+    },
+    {
+        "merged": "C:\\Users\\dubo\\Desktop\\New5.0And6.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_forum.png",
+        "source": "C:\\Users\\dubo\\Desktop\\New5.0And6.0\\app\\src\\main\\res\\drawable-xxhdpi\\ic_forum.png"
+    },
+    {
+        "merged": "C:\\Users\\dubo\\Desktop\\New5.0And6.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_headset.png",
+        "source": "C:\\Users\\dubo\\Desktop\\New5.0And6.0\\app\\src\\main\\res\\drawable-xxhdpi\\ic_headset.png"
+    },
+    {
+        "merged": "C:\\Users\\dubo\\Desktop\\New5.0And6.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_dashboard.png",
+        "source": "C:\\Users\\dubo\\Desktop\\New5.0And6.0\\app\\src\\main\\res\\drawable-xxhdpi\\ic_dashboard.png"
+    }
+]
